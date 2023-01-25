@@ -1,0 +1,12 @@
+{
+  "name": "tloud/328/diner",
+  "authors": [
+    {
+      "name": "Tom  Loudon",
+      "email": "Loudon.Thomas.2@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
