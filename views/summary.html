@@ -1,26 +1,14 @@
 <!--Thomas Loudon-->
 <!--Diner-->
-<!--Breakfast (breakfast.html)-->
+<!--Lunch (lunch.html)-->
 <!--1/25/2023-->
 
 
 <include href="views/header.html"></include>
 
 <body class="container-fluid mt-2 ">
-    <h1>Welcome to My Diner</h1>
-    <p>Breakfast Menu</p>
-    <img src="images/diner.jpeg" alt="picture of a diner">
-
-    <br><br>
-    <ul>
-        <li>Pancakes</li>
-        <li>Eggs Benedict</li>
-        <li>French Toast</li>
-        <li>Crepes</li>
-    </ul>
-    <a type="button" class="btn btn-primary"
-       href="diner-order.html">Place an Order</a>
-
+<h1>Thank You for your order!</h1>
+<p>You ordered {{@SESSION.food}} for {{@SESSION.meal}}</p>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
