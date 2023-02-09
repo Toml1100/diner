@@ -22,9 +22,12 @@
     <div class="form-group">
         <label class="col-sm-4 control-label">Select a meal</label>
         <div class="col-sm-4">
-            <label><input type="radio" value="breakfast" name="meal">Breakfast</label><br>
-            <label><input type="radio" value="lunch" name="meal">Lunch</label><br>
-            <label><input type="radio" value="dinner" name="meal">Dinner</label><br>
+            <repeat group="{{ @meals }}" value="{{ @meal }}">
+                <label><input type="radio" value="{{ @meal }}" name="meal"> {{ ucfirst(@meal) }}</label><br>
+            </repeat>
+<!--            <label><input type="radio" value="breakfast" name="meal">Breakfast</label><br>-->
+<!--            <label><input type="radio" value="lunch" name="meal">Lunch</label><br>-->
+<!--            <label><input type="radio" value="dinner" name="meal">Dinner</label><br>-->
         </div>
 
     </div>

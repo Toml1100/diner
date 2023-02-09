@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Condiments</title>
+</head>
+<body>
+  <h1>My Diner</h1>
+  <h1>Meal Order Part 2</h1>
+  <p>Select Condiments</p>
+
+  <form action="#" method="POST">
+
+    <repeat group="{{ @condiments }}" value="{{ @condiment }}">
+      <label><input type="checkbox" value="{{ @condiment }}" name="condiment[]"> {{ ucfirst(@condiment) }}</label><br>
+    </repeat>
+
+    <!--    submit button-->
+    <div class="col-xs-3">
+      <button class="btn btn-primary" type="submit">Next</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -9,6 +9,18 @@
 <body class="container-fluid mt-2 ">
 <h1>Thank You for your order!</h1>
 <p>You ordered {{@SESSION.food}} for {{@SESSION.meal}}</p>
+<p>You chose these condiments: 
+<F3:loop from="{{ @i=0 }}" to="{{ @i < count(@SESSION.condiment) }}" step="{{ @i++ }}">
+    <check if="{{ count(@SESSION.condiment) -1 == @i }}">
+        <true>
+            {{@SESSION.condiment[@i] . ' '}}
+        </true>
+        <false>
+            {{@SESSION.condiment[@i] . ',' . ' '}}
+        </false>
+    </check>
+</F3:loop>
+</p>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
