@@ -1,10 +1,14 @@
 <?php
-    function getMeals()
+class DataLayer
+{
+    static function getMeals()
     {
         return array("breakfast", "lunch", "dinner", "desert");
     }
 
-function getCondiments()
-{
-    return array("ketchup", "mayonaise", "mustard", "ranch");
+    static function getCondiments()
+    {
+        return array("ketchup", "mayonaise", "mustard", "ranch");
+    }
 }
+
